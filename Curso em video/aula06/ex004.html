@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    
+    <script>
+        var nome = prompt("Qual é o seu nome?")
+        
+        escreve(`Seja bem vindo <strong>${nome}</strong>.`)
+        pulaLinha()
+        escreve(`Seu nome tem ${nome.length} letras!`)
+        escreve(`Seu nome em Maiúsculas é ${nome.toUpperCase()} e em Minusculas é ${nome.toLowerCase()}.`)
+
+
+
+        function pulaLinha() {
+            document.write("<br>")
+        }
+
+        function escreve(texto) {
+            document.write(texto)
+            pulaLinha()
+        }
+    </script>
+
+</body>
+</html>

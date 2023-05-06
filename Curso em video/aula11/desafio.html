@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        div#resposta {
+            margin-top: 10px;
+        }
+        input#pais {
+            margin-top: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>De qual país você é?</h1>
+    <div>Digite o nome do seu país:</div>
+    <input type="text" id="pais">
+    <input type="button" value="enviar" onclick="resposta()">
+    <div id="resposta"></div>
+
+    <script>
+
+        function resposta() {
+            var pais = document.getElementById("pais")
+            var resposta = document.getElementById("resposta")
+            if (pais.value == "Brasil" || pais.value == "brasil") {
+                resposta.innerHTML = `Se você nasceu no ${pais.value}, é <strong>Brasileiro</strong>`
+            } else {
+                resposta.innerHTML = `Se você nasceu no ${pais.value}, então é <strong>Estrangeiro</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
