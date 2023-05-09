@@ -1,0 +1,20 @@
+body {
+    background: rgb(84, 84, 141);
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+section {
+    width: 500px;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.527);
+    margin: auto;
+
+}
+footer {
+    color: white;
+    text-align: center;
+}
