@@ -1,0 +1,5 @@
+npm i -g typescript => {para instalar o typescript globalmente}
+tsc --init => {para criar o arquivo tsconfig.json} 
+// preciso descomentar e definir o rootDir e o outDir para definir as pastas de codigo e compilação
+tsc => {para compilar o condigo a primeira vez}
+tsc -w => {para que o codigo compile automaticamente toda vez que for salvo}
